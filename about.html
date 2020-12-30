@@ -2,51 +2,93 @@
 <html>
   <head>
     <title>102 Gallery</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        text-align: center;
+        font-family: Georgia;
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      header {
+        margin: 0 auto;
+        font-size: 20px;
+      }
+
+      nav ul li {
+        list-style: none;
+        }
+
+      main {
+        height: 700px;
+        overflow: scroll;
+      }
+
+      section {
+        margin-bottom: 50px;
+      }
+
+      section h3 {
+        margin: 40px;
+        font-size: 40px;
+      }
+      .artist p {
+        width: 400px;
+        margin: 0 auto;
+      }
+
+      .artist aside p {
+        margin-top: 20px;
+        color: coral;
+      }
+
+      .map img {
+        width: 500px;
+      }
+
+      </style>
   </head>
   <body>
     <header>
       <h1><a href="./index.html">102 Gallery</a></h1>
     </header>
-      <hr>
+    <hr>
       <nav>
         <ul>
           <li><h3><a href="./about.html">About</a></h3></li>
           <li><h3><a href="./exhibitions.html">Exhibitions</a></h3></li>
         </ul>
-        <hr>
-      <nav>
-        <ol>
-          <li><a href="#artist">Artist</a></li>
-          <li><a href="#instagram">Instagram</a></li>
-          <li><a href="#access">Access</a></li>
-        </ol>
-      </nav>
       </nav>
     <hr>
     <main>
-      <section id="artist">
+      <section class="artist">
         <article>
           <h3>Artist</h3>
           <figure>
             <img src="artist.jpg"/ width="30%">
           </figure>
           <figcaption><h5>Sun Mi Choi</h5></figcaption>
-          <p>This is expample pharagraph. An artist is a person engaged in an activity related to creating art, practicing the arts, or demonstrating an art. The common usage in both everyday speech and academic discourse refers to a practitioner in the visual arts only. However, the term is also often used in the entertainment business, especially in a business context, for musicians and other performers (although less often for actors). "Artiste" (the French for artist) is a variant used in English in this context, but this use has become rare. Use of the term "artist" to describe writers is valid, but less common, and mostly restricted to contexts like that used in criticism.</p>
+          <p>This is expample pharagraph. An artist is a person engaged in an activity related to creating art, practicing the arts, or demonstrating an art. The common usage in both everyday speech and academic discourse refers to a practitioner in the visual arts only.</p>
+          <br>
+          <p>However, the term is also often used in the entertainment business, especially in a business context, for musicians and other performers (although less often for actors). "Artiste" (the French for artist) is a variant used in English in this context, but this use has become rare. Use of the term "artist" to describe writers is valid, but less common, and mostly restricted to contexts like that used in criticism.</p>
         </article>
         <aside>
           <p>she is my mother.</p>
         </aside>
-      <section id="instagram">
+      </section>
+      <section class="instagram">
         <article>
           <h3>Instagram</h3>
-          <p>she doesn't have instagram yet but <a href="https://www.instagram.com/" target="_blank"><em>here</em></a> is official instagram webpage.</p>
+          <p>She doesn't have instagram yet.</p>
+          <p>But <a href="https://www.instagram.com/" target="_blank"><em>here</em></a> is official instagram webpage.</p>
         </article>
       </section>
-      <section id="access">
+      <section class="access">
           <article>
             <h3>Access</h3>
-            <figure>
-              <img src="access.jpg"/ width="30%">
+            <figure class="map">
+              <img src="access.jpg"/>
             </figure>
             <figcaption>대한민국 경남 김해시 대청로 167번길 14-1 공원빌 102호</figcaption>
           </article>
