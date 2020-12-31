@@ -3,60 +3,87 @@
   <head>
     <title>102 Gallery</title>
     <style>
+
+      a {
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: white;
+      }
+
       body {
         box-sizing: border-box;
         text-align: center;
         font-family: Georgia;
-        width: 60%;
         margin: 0 auto;
       }
 
       header {
-        margin: 0 auto;
-        font-size: 20px;
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        color: white;
+        top: 0;
+      }
+
+      header h1 {
+        font-size: 50px;
+        display: inline-block;
       }
 
       main {
-        height: 700px;
-        overflow: scroll;
+        position: relative;
+        top: 200px;
       }
 
-      h1 {
-      }
-
-      nav ul li {
-        list-style: none;
-        padding-left:
+      nav {
+        display: inline-block;
       }
 
       nav ul {
         padding-left: 0;
       }
 
+
+      nav ul li {
+        display: inline-block;
+        width: 200px;
+      }
+
+
       footer {
-        text-align: left;
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        background-color: black;
+        width: 100%;
+        color: white;
       }
 
     </style>
   </head>
 
   <body>
+
     <header>
       <h1><a href="./index.html">102 Gallery</a></h1>
-    </header>
-      <hr>
       <nav>
         <ul>
-          <li><h3><a href="./about.html">About</a></h3></li>
-          <li><h3><a href="./exhibitions.html">Exhibitions</a></h3></li>
+          <li><h2><a href="./about.html">About</a></h2></li>
+          <li><h2><a href="./exhibitions.html">Exhibitions</a></h2></li>
         </ul>
       </nav>
-    <hr>
+    </header>
+
     <main>
       <section class="welcome">
         <article>
           <h3>Welcome to 102 Gallery!</h3>
+          <br>
           <p>relly really welcome</p>
+          <br>
         </article>
         <aside>
           <figure>
@@ -66,9 +93,10 @@
         </aside>
       </section>
     </main>
-    <hr>
+
     <footer>
       <p>ohdonghwan</p>
     </footer>
+
   </body>
 </html>
